@@ -1,0 +1,30 @@
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+print("Select Operation")
+print("1.Add")
+print("2.Subtraction")
+print("3.Multiply")
+print("4.Division")
+while True:
+    n=input("Enter operation 1,2,3,4 ")
+    n1=float(input("enter first number"))
+    n2=float(input("enter second number"))
+
+    if n=='1':
+        print("Result=",add(n1,n2))
+    elif n=='2':
+        print("Result=", sub(n1, n2))
+    elif n=='3':
+        print("Result=", mul(n1,n2))
+    elif n=='4':
+        print("Result=", div(n1, n2))
+        
+        break
+    else:
+        print("Invalid Input")
